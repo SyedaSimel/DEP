@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your brief description goes here. Summarize the page content in one or two sentences.">
+    <title>Your Page Title</title>
+    <title>Lush Woods</title>
+    <link rel="icon" type="image/x-icon" href="./images/logocrop.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="xyz">
+        <div class="nav-links">
+            <img loading="lazy" src="./images/logocrop.jpg" alt="Logo" class="logoimg">
+            <a href="index.php">Home</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="logout.php" class="btn btn-warning">Logout</a>
+
+        </div>
+
+    </nav>
+    <header>
+        <div class="text1">
+            <h1>Lush Woods Inns</h1>
+            <p>Welcome to a world of opulence and tranquility. Indulge in a luxurious experience.</p>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img loading="lazy" src="./images/hotelpic1.jpg" alt="Luxury Room 1" style="height: 500px;">
+            </div>
+            <div class="mySlides">
+                <img loading="lazy" src="./images/hotelpic3.jpg" alt="Luxury Room 2">
+            </div>
+            <div class="mySlides">
+                <img loading="lazy" src="./images/hotelpic1.jpg" alt="Luxury Room 3">
+            </div>
+        </div>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Lush Woods Inns</h2>
+        <p>Indulge in the epitome of sophistication and comfort with our Luxury Rooms at StayIn Hotel. Each meticulously
+            designed space is a harmonious blend of opulence and functionality, curated to provide an unforgettable
+            retreat for our discerning guests.</p>
+    </section>
+
+    <div class="room-container">
+        <div class="room">
+            <img id="cardimg" loading="lazy" src="./images/room1.jpg" width="550" height="367" alt="Room 1">
+            <div class="room-info">
+                <h3>Luxury Suite</h3>
+                <p>Spacious suite with a breathtaking view</p>
+                <div class="room-price">$300 per night</div>
+                <a href="hr1.php" class="book-button">Book Now</a>
+            </div>
+        </div>
+        <div class="room">
+            <img  id="cardimg" loading="lazy" src="./images/room2.jpg" width="550" height="367" alt="Luxury Room 2">
+            <div class="room-info">
+                <h3>Premium Double Room</h3>
+                <p>Comfort and style combined</p>
+                <div class="room-price">$200 per night</div>
+                <a href="hr1.php" class="book-button">Book Now</a>
+            </div>
+        </div>
+        <div class="room">
+            <img id="cardimg" loading="lazy" src="./images/room1.jpg" width="550" height="367" alt="Luxury Room 2">
+            <div class="room-info">
+                <h3>Premium Single Room</h3>
+                <p>Comfort and style combined</p>
+                <div class="room-price">$100 per night</div>
+                <a href="hr1.php" class="book-button">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="rooms">
+        <h2>Our Luxurious Rooms</h2>
+        <p>Our Luxury Rooms exude an air of refined elegance, featuring lavish furnishings, premium materials, and
+            carefully selected decor. Sink into the plushness of bespoke bedding, where every detail is crafted to
+            ensure a restful night's sleep. The rooms boast spacious layouts, offering a sense of openness and
+            tranquility, complemented by large windows that welcome natural light and provide breathtaking views of the
+            surroundings.</p>
+    </section>
+
+    <section id="services">
+        <h2>Exclusive Services</h2>
+        <p>Our dedicated 24/7 concierge service is at your beck and call, ready to assist with any request, be it
+            arranging transportation, booking reservations at renowned restaurants, or curating personalized itineraries
+            to explore the local treasures. Allow us to take care of every detail, ensuring your stay is marked by
+            effortless luxury.</p>
+    </section>
+
+    <div class="icons">
+        <i class="service-icon fas fa-utensils" title="Food"></i>
+        <i class="service-icon fas fa-hospital" title="Healthcare"></i>
+        <i class="service-icon fas fa-spa" title="Spa"></i>
+        <i class="service-icon fas fa-car" title="Car Services"></i>
+    </div>
+
+    <section id="gallery">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img loading="lazy" src="./images/room1.jpg" alt="Luxury Interior 1">
+            <img loading="lazy" src="./images/room2.jpg" alt="Luxury Interior 2">
+            <img loading="lazy" src="./images/out1.jpg" alt="Luxury Exterior 1">
+            <img loading="lazy" src="./images/out2.jpg" alt="Luxury Exterior 2">
+            <img loading="lazy" src="./images/dinning.jpg" alt="Luxury Dining">
+            <img loading="lazy" src="./images/spa.jpg" alt="Luxury Spa">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Lush Woods Hotels. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for image slideshow
+let slideIndex = 0;
+
+function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change slide every 5 seconds
+}
+
+showSlides();
+    </script>
+
+</body>
+
+</html>

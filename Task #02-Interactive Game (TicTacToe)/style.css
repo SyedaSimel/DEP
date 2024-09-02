@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background: rgb(237,172,199);
+background: radial-gradient(circle, rgba(237,172,199,1) 17%, rgba(119,166,222,1) 98%);
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+h1{
+    margin-top: 1rem;
+    color: #f7e9e9;
+    font-size: 50px;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+i{
+    margin: 0 0.9rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.75rem;
+}
+.containor{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+    
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    gap: 2rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+    font-size: 8vmin;
+    background-color: #f5e6ef;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #248cc9;
+    color: #EEEEEE;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+#new-Btn {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    width: max-content;
+    background-color: #248cc9;
+    color: #EEEEEE;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+#msg{
+    font-size: 6vmin;
+    color: rgb(255, 253, 253);
+}
+
+.msgCon{
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    /* width: max-content; */
+}
+.msgbox{
+    background-color: #927ff3;
+    padding: 5rem 20rem;
+    /* border: 5px solid black; */
+    box-shadow:  0 0 1rem rgba(0,0,0,0.1);
+    
+}
+
+.hide{
+    display: none;
+}
+.x {
+    color: rgb(74, 74, 74); /* Color for X */
+    font-weight: bold;
+}
+
+.o {
+    color: rgb(234, 110, 236); /* Color for O */
+    font-weight: bold;
+}
